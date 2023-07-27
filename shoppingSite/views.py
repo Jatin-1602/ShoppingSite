@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from store.models import Product
 
-def home(request):
+def index(request):
     products = Product.objects.all()
     context = {
         'products' : products,
